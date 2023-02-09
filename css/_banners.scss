@@ -1,0 +1,39 @@
+@import '_variables.scss';
+
+.banners {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__item {
+    background-color: $grey_shade;
+  }
+
+  &__text {
+    margin: 0;
+    padding-top: 72px;
+    padding-left: 26px;
+    padding-bottom: 22px;
+    max-width: 222px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  &__sale {
+    margin: 0;
+    padding-left: 26px;
+    padding-right: 26px;
+    max-width: 200px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 600;
+    color: $white;
+    background-color: $blue;
+  }
+
+  &__sale-letter {
+    font-size: 36px;
+    line-height: 58px;
+  }
+}

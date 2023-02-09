@@ -1,0 +1,35 @@
+@import '_variables.scss';
+
+.articles {
+  position: relative;
+  padding-bottom: 80px;
+
+  &__arrow {
+    color: $black;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    font-weight: 500;
+  }
+
+  &__date {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: $grey;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+  }
+}
