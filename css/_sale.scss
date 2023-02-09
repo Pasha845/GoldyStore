@@ -1,0 +1,70 @@
+@import '_variables.scss';
+
+.sale {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__link-div {
+    margin-bottom: 36px;
+  }
+
+  &__margin-link:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid $grey_light;
+    width: calc(656 / 1280 * 100% - 32px);
+    height: auto;
+  }
+
+  &__sale {
+    margin: 16px 24px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    max-width: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    color: $white;
+    background-color: $blue;
+  }
+  
+  &__new-price {
+    margin: 0;
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__old-price {
+    margin: 0;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: $grey;
+  }
+
+  &__cube {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    min-height: 250px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: auto;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,44 @@
+@import '_variables.scss';
+
+.categories {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+  
+  &__item {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto;
+    background-color: $grey_shade;
+  }
+
+  &__item picture {
+    transition: 0.3s;
+  }
+
+  &__item picture:hover {
+    transform: scale(1.2);
+  }
+
+  &__cube {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 70px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+  }
+}

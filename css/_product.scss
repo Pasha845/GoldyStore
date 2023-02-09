@@ -1,0 +1,118 @@
+@import '_variables.scss';
+
+.product {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Prata';
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  &__number {
+    margin: 0;
+    margin-bottom: 2px;
+    color: $grey;
+  }
+
+  &__new-price {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  &__old-price {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    color: $grey;
+  }
+
+  &__timer {
+    padding: 12px 14px;
+    background-color: #F5F5F5;
+  }
+
+  &__timer-div {
+    border: 1px solid #D0D0D0;
+    max-width: 52px;
+    background-color: $white;
+  }
+
+  &__timer-time {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  &__timer-name {
+    text-align: center;
+    margin: 0;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  &__title-category {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  &__tultipe {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: $grey_light;
+    cursor: pointer;
+    transition: background-color .3s;
+  }
+
+  &__tultipe:hover {
+    background-color: $white_grey;
+  }
+
+  &__tultipe:focus {
+    outline: none;
+  }
+
+  .tippy-box[data-theme~='white'] {
+    border-radius: 0;
+    color: $black;
+    background-color: $white;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .tippy-box[data-theme~='white'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: $white;
+  }
+
+  .tippy-box[data-theme~='white'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: $white;
+  }
+
+  .tippy-box[data-theme~='white'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: $white;
+  }
+
+  .tippy-box[data-theme~='white'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: $white;
+  }
+}

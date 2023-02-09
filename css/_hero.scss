@@ -1,0 +1,67 @@
+@import '_variables.scss';
+
+.hero {
+  &__swiper {
+    position: relative;
+  }
+
+  &__style-foto {
+    padding-left: 126px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__prev {
+    transform: translate(100%, -180%);
+  }
+
+  &__prev::before {
+    left: calc(50% - 6px / 2);
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+  }
+
+  &__next {
+    transform: translate(10%, -180%);
+  }
+
+  &__next::before {
+    left: calc(50% - 15px / 2);
+    border-top: 2px solid $black;
+    border-right: 2px solid $black;
+  }
+
+  &__foto-1 {
+    background-image: url("../img/hero__default-foto-1.png");
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Prata';
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 54px;
+    font-family: 'Prata';
+    font-size: 50px;
+    line-height: 1;
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  width: 85px;
+  height: 15px;
+  outline: none;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: $black;
+  cursor: pointer;
+}

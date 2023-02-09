@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="visually-hidden">GoldyStore</h1>
+  <header class="header">
+    <div class="header__container container flex">
+      <div class="header__div flex">
+        <div class="header__filter">
+          <svg width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="sprites.svg#place"></use>
+          </svg>
+          <select class="js-choices">
+            <option value="Moscow">Санкт-Петербург</option>
+            <option value="Moscow">Москва</option>
+            <option value="Kazan">Нижний Новгород</option>
+            <option value="Ufa">Ростов-на-Дону</option>
+          </select>
+        </div>
+        <a class="header__tel" href="tel:88007852535">
+          <svg class="header__tel-icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="sprites.svg#phone"></use>
+          </svg>
+          8 800 785-25-35
+        </a>
+        <a class="header__logo">
+          <svg width="183" height="54" viewBox="0 0 183 54">
+            <use class="header__logo-foto" xlink:href="sprites.svg#logo"></use>
+          </svg>
+        </a>
+        <a class="header__sublink" href="#">Вход</a>
+        <a class="header__sublink" href="#">Регистрация</a>
+      </div>
+      <div class="flex">
+        <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
+          <span class="container-focus-link">
+            <span class="header__count">23</span>
+            <svg class="header__basket" width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="sprites.svg#favorite"></use>
+            </svg>
+          </span>
+        </a>
+        <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
+          <span class="container-focus-link">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="sprites.svg#chart"></use>
+            </svg>
+          </span>
+        </a>
+        <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
+          <span class="container-focus-link">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="sprites.svg#bag"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="header__holder container flex">
+      <nav class="header__cube flex">
+        <ul class="header__submenu flex list-reset">
+          <li class="header__link-margin">
+            <a class="container-link" href="#" aria-label="Каталог">КАТАЛОГ</a>
+          </li>
+          <li class="header__link-margin">
+            <a class="container-link" href="#" aria-label="Акции">АКЦИИ</a>
+          </li>
+          <li class="header__link-margin">
+            <a class="container-link" href="#" aria-label="Шоу-рум">БРЕНДЫ</a>
+          </li>
+          <li class="header__link-margin">
+            <a class="container-link" href="#" aria-label="Магазины">МАГАЗИНЫ</a>
+          </li>
+          <li class="header__link-margin">
+            <a class="container-link" href="#" aria-label="О нас">О НАС</a>
+          </li>
+          <li class="header__link-margin">
+            <a class="container-link" href="#" aria-label="Доставка и оплата">ДОСТАВКА И ОПЛАТА</a>
+          </li>
+          <li class="header__link-margin">
+            <a class="container-link" href="#" aria-label="Статьи">СТАТЬИ</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="header__form flex">
+        <label class="header__label">
+          <input class="header__input" type="search" placeholder="Поиск по сайту">
+          <svg class="header__search-icon" width="20" height="20" viewBox="0 0 20 20">
+            <use xlink:href="sprites.svg#search"></use>
+          </svg>
+        </label>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__slider-wrapper container">
+        <div class="swiper hero__swiper">
+          <button class="hero__prev" aria-label="К предыдущему слайду"></button>
+          <ul class="swiper-wrapper list-reset">
+            <button class="hero__prev" aria-label="К предыдущему слайду"></button>
+            <li class="hero__style-foto hero__foto-1 swiper-slide">
+              <p class="hero__text">Суперскидка до 60%</p>
+              <h3 class="hero__title">НА БРИЛЛИАНТЫ</h3>
+              <a class="hero__btn container-btn" href="#">Подробнее</a>
+            </li>
+            <li class="hero__style-foto hero__foto-1 swiper-slide">
+              <p class="hero__text">Суперскидка до 60%</p>
+              <h3 class="hero__title">НА БРИЛЛИАНТЫ</h3>
+              <a class="hero__btn container-btn" href="#">Подробнее</a>
+            </li>
+            <li class="hero__style-foto hero__foto-1 swiper-slide">
+              <p class="hero__text">Суперскидка до 60%</p>
+              <h3 class="hero__title">НА БРИЛЛИАНТЫ</h3>
+              <a class="hero__btn container-btn" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+        <button class="swiper-btn hero__next" aria-label="К следующему слайду"></button>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2 class="categories__title container-title">Популярные категории</h2>
+        <div class="row">
+          <article class="categories__item col-lg-2">
+            <picture>
+              <source srcset="img/categories__default-foto-1.png" media="(min-width: 577px)">
+              <img srcset="img/categories__default-foto-1.png" alt="Default image" src="#">
+            </picture>
+            <div class="categories__cube">
+              <p class="categories__text">Кольца</p>
+            </div>
+          </article>
+          <article class="categories__item col-lg-2">
+            <picture>
+              <source srcset="img/categories__default-foto-2.png" media="(min-width: 577px)">
+              <img srcset="img/categories__default-foto-2.png" alt="Default image" src="#">
+            </picture>
+            <div class="categories__cube">
+              <p class="categories__text">Кольца</p>
+            </div>
+          </article>
+          <article class="categories__item col-lg-2">
+            <picture>
+              <source srcset="img/categories__default-foto-3.png" media="(min-width: 577px)">
+              <img srcset="img/categories__default-foto-3.png" alt="Default image" src="#">
+            </picture>
+            <div class="categories__cube">
+              <p class="categories__text">Кольца</p>
+            </div>
+          </article>
+          <article class="categories__item col-lg-2">
+            <picture>
+              <source srcset="img/categories__default-foto-4.png" media="(min-width: 577px)">
+              <img srcset="img/categories__default-foto-4.png" alt="Default image" src="#">
+            </picture>
+            <div class="categories__cube">
+              <p class="categories__text">Кольца</p>
+            </div>
+          </article>
+          <article class="categories__item col-lg-2">
+            <picture>
+              <source srcset="img/categories__default-foto-5.png" media="(min-width: 577px)">
+              <img srcset="img/categories__default-foto-5.png" alt="Default image" src="#">
+            </picture>
+            <div class="categories__cube">
+              <p class="categories__text">Кольца</p>
+            </div>
+          </article>
+          <article class="categories__item col-lg-2">
+            <picture>
+              <source srcset="img/categories__default-foto-6.png" media="(min-width: 577px)">
+              <img srcset="img/categories__default-foto-6.png" alt="Default image" src="#">
+            </picture>
+            <div class="categories__cube">
+              <p class="categories__text">Кольца</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sale">
+      <div class="container">
+        <h2 class="container-title sale__title">Распродажа</h2>
+        <ul class="sale__link-div flex list-reset">
+          <li class="sale__margin-link">
+            <a class="container-sublink-pressed" href="#">Кольца</a>
+          </li>
+          <li class="sale__margin-link">
+            <a class="container-sublink" href="#">Серьги</a>
+          </li>
+          <li class="sale__margin-link">
+            <a class="container-sublink" href="#">Браслеты</a>
+          </li>
+          <li class="sale__margin-link">
+            <a class="container-sublink" href="#">Часы</a>
+          </li>
+        </ul>
+        <div class="container-slider-wrapper">
+          <button class="swiper-btn swiper-prev sale__prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next sale__next" aria-label="К следующему слайду"></button>
+        </div>
+        <div class="sale__swiper swiper row">
+          <div class="swiper-wrapper">
+            <article class="sale__slide swiper-slide col-lg-3">
+              <div class="sale__sale">Sale</div>
+              <picture class="container-photo">
+                <source srcset="img/sale__default-foto-1.png" media="(min-width: 577px)">
+                <img srcset="img/sale__default-foto-1.png" alt="Default image" src="#" width="193" height="210">
+              </picture>
+              <div class="container-cube">
+                <div class="container-price flex">
+                  <p class="sale__new-price">41 000 ₽</p>
+                  <p class="sale__old-price">65 000 ₽</p>
+                  <div class="container-sale">-45%</div>
+                </div>
+                <p class="sale__text">Стильное кольцо из белого золота c бриллиантами</p>
+              </div>
+            </article>
+            <article class="sale__slide swiper-slide col-lg-3">
+              <picture class="container-photo">
+                <source srcset="img/sale__default-foto-2.png" media="(min-width: 577px)">
+                <img srcset="img/sale__default-foto-2.png" alt="Default image" src="#" width="193" height="210">
+              </picture>
+              <div class="container-cube">
+                <div class="container-price flex">
+                  <p class="sale__new-price">56 000 ₽</p>
+                </div>
+                <p class="sale__text">Стильное кольцо из белого золота c бриллиантами</p>
+              </div>
+            </article>
+            <article class="sale__slide swiper-slide col-lg-3">
+              <picture class="container-photo">
+                <source srcset="img/sale__default-foto-3.png" media="(min-width: 577px)">
+                <img srcset="img/sale__default-foto-3.png" alt="Default image" src="#" width="193" height="210">
+              </picture>
+              <div class="container-cube">
+                <div class="container-price flex">
+                  <p class="sale__new-price">37 500 ₽</p>
+                </div>
+                <p class="sale__text">Стильное кольцо из белого золота c бриллиантами</p>
+              </div>
+            </article>
+            <article class="sale__slide swiper-slide col-lg-3">
+              <picture class="container-photo">
+                <source srcset="img/sale__default-foto-4.png" media="(min-width: 577px)">
+                <img srcset="img/sale__default-foto-4.png" alt="Default image" src="#" width="193" height="210">
+              </picture>
+              <div class="container-cube">
+                <div class="container-price flex">
+                  <p class="sale__new-price">41 000 ₽</p>
+                </div>
+                <p class="sale__text">Стильное кольцо из белого золота c бриллиантами</p>
+              </div>
+            </article>
+            <article class="sale__slide swiper-slide col-lg-3">
+              <picture class="container-photo">
+                <source srcset="img/sale__default-foto-2.png" media="(min-width: 577px)">
+                <img srcset="img/sale__default-foto-2.png" alt="Default image" src="#" width="193" height="210">
+              </picture>
+              <div class="container-cube">
+                <div class="container-price flex">
+                  <p class="sale__new-price">41 000 ₽</p>
+                </div>
+                <p class="sale__text">Стильное кольцо из белого золота c бриллиантами</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banners">
+      <div class="container">
+        <div class="row">
+          <article class="col-lg-4">
+            <div class="banners__item flex">
+              <div>
+                <p class="banners__text">СКИДКИ НА ВСЕ УКРАШЕНИЯ С БРИЛЛИАНТАМИ</p>
+                <p class="banners__sale">До <span class="banners__sale-letter">-50%</span></p>
+              </div>
+              <picture>
+                <source srcset="img/banners__default-foto-1.png" media="(min-width: 577px)">
+                <img srcset="img/banners__default-foto-1.png" alt="Default image" src="#">
+              </picture>
+            </div>
+          </article>
+          <article class="col-lg-4">
+            <div class="banners__item flex">
+              <div>
+                <p class="banners__text">СКИДКИ НА КОЛЬЦА И БРАСЛЕТЫ</p>
+                <div class="banners__sale">До <span class="banners__sale-letter">-40%</span></div>
+              </div>
+              <picture>
+                <source srcset="img/banners__default-foto-2.png" media="(min-width: 577px)">
+                <img srcset="img/banners__default-foto-2.png" alt="Default image" src="#">
+              </picture>
+            </div>
+          </article>
+          <article class="col-lg-4">
+            <div class="banners__item flex">
+              <div>
+                <p class="banners__text">СНИЖЕНИЕ ЦЕН НА ОБРУЧАЛЬНЫЕ КОЛЬЦА</p>
+                <div class="banners__sale">До <span class="banners__sale-letter">-60%</span></div>
+              </div>
+              <picture>
+                <source srcset="img/banners__default-foto-3.png" media="(min-width: 577px)">
+                <img srcset="img/banners__default-foto-3.png" alt="Default image" src="#">
+              </picture>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="container">
+        <h2 class="container-title">Товар дня</h2>
+        <div class="container-slider-wrapper">
+          <button class="swiper-btn swiper-prev product__prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next product__next" aria-label="К следующему слайду"></button>
+        </div>
+        <div class="product__swiper swiper">
+          <div class="swiper-wrapper">
+            <article class="product__slide swiper-slide row">
+              <div class="container-slider-wrapper">
+                <button class="swiper-btn swiper-prev product__foto-next" aria-label="К предыдущему слайду"></button>
+                <button class="swiper-btn swiper-next product__foto-prev" aria-label="К следующему слайду"></button>
+              </div>
+              <div class="product__foto-swiper swiper col-lg-6">
+                <div class="swiper-wrapper">
+                  <picture class="swiper-slide">
+                    <source srcset="img/product__default-foto-1.png" media="(min-width: 577px)">
+                    <img srcset="img/product__default-foto-1.png" alt="Default image" src="#">
+                  </picture>
+                  <picture class="swiper-slide">
+                    <source srcset="img/product__default-foto-1.png" media="(min-width: 577px)">
+                    <img srcset="img/product__default-foto-1.png" alt="Default image" src="#">
+                  </picture>
+                  <picture class="swiper-slide">
+                    <source srcset="img/product__default-foto-1.png" media="(min-width: 577px)">
+                    <img srcset="img/product__default-foto-1.png" alt="Default image" src="#">
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div>4,2</div>
+                <h3 class="product__subtitle">Кольцо из золота с бриллиантами</h3>
+                <p class="product__number">Артикул: 1012076</p>
+                <div class="flex">
+                  <p class="product__new-price">22 000 ₽</p>
+                  <p class="product__old-price">22 000 ₽</p>
+                  <div class="container-sale">-45%</div>
+                  <div class="product__timer flex">
+                    <div class="product__timer-div">
+                      <p class="product__timer-time">12</p>
+                      <p class="product__timer-name">часов</p>
+                    </div>
+                    <div class="product__timer-div">
+                      <p class="product__timer-time">46</p>
+                      <p class="product__timer-name">минут</p>
+                    </div>
+                    <div class="product__timer-div">
+                      <p class="product__timer-time">51</p>
+                      <p class="product__timer-name">секунд</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="product__title-category">ЦВЕТ</p>
+                  <div class="playlists__checboxes">
+                    <label class="playlists__checkbox-wrap">
+                      <input class="playlists__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+                      <span class="playlists__checkbox-content">
+                        <span class="playlists__visual-check"></span>
+                      </span>
+                    </label>
+                    <label class="playlists__checkbox-wrap">
+                      <input class="playlists__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+                      <span class="playlists__checkbox-content">
+                        <span class="playlists__visual-check"></span>
+                      </span>
+                    </label>
+                    <label class="playlists__checkbox-wrap">
+                      <input class="playlists__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+                      <span class="playlists__checkbox-content">
+                        <span class="playlists__visual-check"></span>
+                      </span>
+                    </label>
+                    <label class="playlists__checkbox-wrap">
+                      <input class="playlists__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+                      <span class="playlists__checkbox-content">
+                        <span class="playlists__visual-check"></span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="flex">
+                  <p class="product__title-category">РАЗМЕР</p>
+                  <button class="product__tultipe js-tultipe" data-tippy-content="Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений.">?</button>
+                </div>
+                <a class="container-btn" href="#">В КОРЗИНУ</a>
+                <a class="" href="#">КУПИТЬ В 1 КЛИК</a>
+              </div>
+            </article>
+            <article class="product__slide swiper-slide row">
+              <div class="product__foto-swiper swiper col-lg-6">
+                <div class="swiper-wrapper">
+                  <picture class="swiper-slide">
+                    <source srcset="img/product__default-foto-1.png" media="(min-width: 577px)">
+                    <img srcset="img/product__default-foto-1.png" alt="Default image" src="#">
+                  </picture>
+                  <picture class="swiper-slide">
+                    <source srcset="img/product__default-foto-1.png" media="(min-width: 577px)">
+                    <img srcset="img/product__default-foto-1.png" alt="Default image" src="#">
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3>Кольцо из золота с бриллиантами</h3>
+                <p>Артикул: 1012076</p>
+                <div>
+                  <p>цвет</p>
+                </div>
+                <div>
+                  <p>Размер <button class="product__tultipe js-tultipe" data-tippy-content="Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений.">?</button></p>
+                </div>
+                <a class="container-btn" href="#">в корзину</a>
+                <a class="" href="#">купить в 1 клик</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles">
+      <div class="container">
+        <div class="container-slider-wrapper">
+          <a class="articles__link container-link" href="#" aria-label="Читать все">
+            ЧИТАТЬ ВСЕ
+            <svg class="articles__arrow" width="27" height="12" viewBox="0 0 27 12">
+              <use xlink:href="sprites.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <h2 class="articles__title container-title">Статьи</h2>
+        <div class="row">
+          <article class="articles__item col-lg-3">
+            <picture>
+              <source srcset="img/articles__default-foto-1.png" media="(min-width: 577px)">
+              <img srcset="img/articles__default-foto-1.png" alt="Default image" src="#">
+            </picture>
+            <p class="articles__date">21 сентября 2021</p>
+            <p class="articles__text">Обручальные кольца: тренды 2021</p>
+          </article>
+          <article class="articles__item col-lg-3">
+            <picture>
+              <source srcset="img/articles__default-foto-2.png" media="(min-width: 577px)">
+              <img srcset="img/articles__default-foto-2.png" alt="Default image" src="#">
+            </picture>
+            <p class="articles__date">25 сентября 2021</p>
+            <p class="articles__text">Главные ювелирные тренды года</p>
+          </article>
+          <article class="articles__item col-lg-3">
+            <picture>
+              <source srcset="img/articles__default-foto-3.png" media="(min-width: 577px)">
+              <img srcset="img/articles__default-foto-3.png" alt="Default image" src="#">
+            </picture>
+            <p class="articles__date">21 сентября 2021</p>
+            <p class="articles__text">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
+          </article>
+          <article class="articles__item col-lg-3">
+            <picture>
+              <source srcset="img/articles__default-foto-4.png" media="(min-width: 577px)">
+              <img srcset="img/articles__default-foto-4.png" alt="Default image" src="#">
+            </picture>
+            <p class="articles__date">21 сентября 2021</p>
+            <p class="articles__text">Как отличить золото от подделки: 10 практических советов</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="libs/choices.min.js"></script>
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="//unpkg.com/@popperjs/core"></script>
+  <script src="//unpkg.com/tippy.js"></script>
+  <script src="js/selector.js"></script>
+  <script src="js/sliders.js"></script>
+</body>
+</html>
